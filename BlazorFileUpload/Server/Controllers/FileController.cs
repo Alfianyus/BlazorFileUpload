@@ -25,7 +25,7 @@ namespace BlazorFileUpload.Server.Controllers
             {
                 var uploadResult= new UploadResult();
                 string trustedFileNameForFileStorage;
-                var untrustedFileName=file.Name;
+                var untrustedFileName=file.FileName;
                 uploadResult.FileName=untrustedFileName;
                 var trustedFileNameForDisplay=WebUtility.HtmlEncode(untrustedFileName);
 
